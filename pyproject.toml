@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "docx-cli"
+version = "0.1.0"
+description = "Deterministic .docx generation, reverse validation and injection scanning for Russian legal documents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{ name = "lnfnt", email = "lnfnt@proton.me" }]
+dependencies = [
+    "python-docx>=1.1.0",
+    "pydantic>=2.0.0",
+    "lxml>=4.9.0",
+]
+
+[project.scripts]
+# docx-cli — основное имя команды; docx-cli — совместимый алиас
+docx-cli = "docx_cli.cli:main"
+docx-creator = "docx_cli.cli:main"  # compat alias per owner decision 20.10
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.hatch.build.targets.wheel]
+packages = ["docx_cli"]
+force-include = { "templates" = "docx_cli/_templates" }
