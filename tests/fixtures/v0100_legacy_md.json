@@ -1,0 +1,784 @@
+{
+ "isk_full": {
+  "md": "Истец: ООО «Ромашка»\nОтветчик: ИП Петров А.А.\n\nПРОЕКТ\n\nИСКОВОЕ ЗАЯВЛЕНИЕ\nо взыскании долга\n\nВ производстве суда находится дело № 1.\n\n- первый пункт\n- второй пункт\n\n1. Первый нумерованный\n2. Второй нумерованный\n10. Десятый нумерованный\n11. Одиннадцатый\n\nПриложения:\n1) копия договора\n2) расчёт\n\n## Подзаголовок раздела\n\nТекст с **жирным**, _курсивом_, <u>чёркнутым</u> и 1.1. дробным номером.\n\nПРОШУ:\nВзыскать долг – 100 руб.\n\nДата: 01.01.2026\n",
+  "signature": {
+   "author": "colleague",
+   "paragraphs": [
+    {
+     "i": 0,
+     "text": "Истец: ООО «Ромашка»",
+     "style": "Normal",
+     "align": "LEFT (0)",
+     "line_spacing": 1.0,
+     "space_before_pt": null,
+     "space_after_pt": 2.0,
+     "left_cm": 8.128,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "Истец:",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": " ООО «Ромашка»",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 1,
+     "text": "Ответчик: ИП Петров А.А.",
+     "style": "Normal",
+     "align": "LEFT (0)",
+     "line_spacing": 1.0,
+     "space_before_pt": null,
+     "space_after_pt": 2.0,
+     "left_cm": 8.128,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "Ответчик:",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": " ИП Петров А.А.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 2,
+     "text": "ПРОЕКТ",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 12.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "ПРОЕКТ",
+       "bold": null,
+       "italic": true,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 3,
+     "text": "ИСКОВОЕ ЗАЯВЛЕНИЕ",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.15,
+     "space_before_pt": 6.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "ИСКОВОЕ ЗАЯВЛЕНИЕ",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 14.0
+      }
+     ]
+    },
+    {
+     "i": 4,
+     "text": "о взыскании долга",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.15,
+     "space_before_pt": 0.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "о взыскании долга",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 5,
+     "text": "В производстве суда находится дело № 1.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "В производстве суда находится дело № 1.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 6,
+     "text": "первый пункт",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "первый пункт",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 7,
+     "text": "второй пункт",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "второй пункт",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "text": "1. Первый нумерованный",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "1. Первый нумерованный",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 9,
+     "text": "2. Второй нумерованный",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "2. Второй нумерованный",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 10,
+     "text": "10. Десятый нумерованный",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -1.0,
+     "runs": [
+      {
+       "text": "10. Десятый нумерованный",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 11,
+     "text": "11. Одиннадцатый",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -1.0,
+     "runs": [
+      {
+       "text": "11. Одиннадцатый",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 12,
+     "text": "Приложения:",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "Приложения:",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 13,
+     "text": "1) копия договора",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "1) копия договора",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 14,
+     "text": "2) расчёт",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "2) расчёт",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 15,
+     "text": "Подзаголовок раздела",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.15,
+     "space_before_pt": 6.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "Подзаголовок раздела",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 16,
+     "text": "Текст с жирным, курсивом, чёркнутым и 1.1. дробным номером.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "Текст с ",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": "жирным",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": ", ",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": "курсивом",
+       "bold": null,
+       "italic": true,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": ", ",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": "чёркнутым",
+       "bold": null,
+       "italic": null,
+       "underline": true,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": " и 1.1. дробным номером.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 17,
+     "text": "ПРОШУ:",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.5,
+     "space_before_pt": 12.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "ПРОШУ:",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 18,
+     "text": "Взыскать долг — 100 руб.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "Взыскать долг — 100 руб.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 19,
+     "text": "Дата: 01.01.2026",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "Дата: 01.01.2026",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    }
+   ],
+   "tables": 0
+  },
+  "report": [
+   {
+    "type": "dash_normalized",
+    "zone": 18,
+    "line": "Взыскать долг – 100 руб.",
+    "from": "–",
+    "to": "—"
+   }
+  ]
+ },
+ "otzyv_simple": {
+  "md": "Ответчик: ООО «Вектор»\n\nОТЗЫВ ИСТЦА\n\nИстец заявленные требования не обосновал.\n\n1. Первое возражение.\n2. Второе возражение.\n\nПРОШУ СУД:\nВ отказать в удовлетворении иска.\n\nПриложения:\n- доверенность\n",
+  "signature": {
+   "author": "colleague",
+   "paragraphs": [
+    {
+     "i": 0,
+     "text": "Ответчик: ООО «Вектор»",
+     "style": "Normal",
+     "align": "LEFT (0)",
+     "line_spacing": 1.0,
+     "space_before_pt": null,
+     "space_after_pt": 2.0,
+     "left_cm": 8.128,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "Ответчик:",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      },
+      {
+       "text": " ООО «Вектор»",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 1,
+     "text": "ОТЗЫВ ИСТЦА",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.15,
+     "space_before_pt": 6.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "ОТЗЫВ ИСТЦА",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 14.0
+      }
+     ]
+    },
+    {
+     "i": 2,
+     "text": "Истец заявленные требования не обосновал.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "Истец заявленные требования не обосновал.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 3,
+     "text": "1. Первое возражение.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "1. Первое возражение.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 4,
+     "text": "2. Второе возражение.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "2. Второе возражение.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 5,
+     "text": "ПРОШУ СУД:",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.5,
+     "space_before_pt": 12.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "ПРОШУ СУД:",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 6,
+     "text": "В отказать в удовлетворении иска.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "В отказать в удовлетворении иска.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 7,
+     "text": "Приложения:",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "Приложения:",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 8,
+     "text": "доверенность",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": 1.251,
+     "first_cm": -0.75,
+     "runs": [
+      {
+       "text": "доверенность",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    }
+   ],
+   "tables": 0
+  },
+  "report": []
+ },
+ "title_first": {
+  "md": "ХОДАТАЙСТВО\nоб обеспечении иска\n\nПрошу обеспечить иск.\n",
+  "signature": {
+   "author": "colleague",
+   "paragraphs": [
+    {
+     "i": 0,
+     "text": "ХОДАТАЙСТВО",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.15,
+     "space_before_pt": 6.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "ХОДАТАЙСТВО",
+       "bold": true,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 14.0
+      }
+     ]
+    },
+    {
+     "i": 1,
+     "text": "об обеспечении иска",
+     "style": "Normal",
+     "align": "CENTER (1)",
+     "line_spacing": 1.15,
+     "space_before_pt": 0.0,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": null,
+     "runs": [
+      {
+       "text": "об обеспечении иска",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    },
+    {
+     "i": 2,
+     "text": "Прошу обеспечить иск.",
+     "style": "Normal",
+     "align": "JUSTIFY (3)",
+     "line_spacing": 1.5,
+     "space_before_pt": null,
+     "space_after_pt": 6.0,
+     "left_cm": null,
+     "first_cm": 1.251,
+     "runs": [
+      {
+       "text": "Прошу обеспечить иск.",
+       "bold": null,
+       "italic": null,
+       "underline": null,
+       "font": "Times New Roman",
+       "size_pt": 12.0
+      }
+     ]
+    }
+   ],
+   "tables": 0
+  },
+  "report": []
+ }
+}

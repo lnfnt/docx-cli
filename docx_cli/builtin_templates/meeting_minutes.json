@@ -1,0 +1,6 @@
+{
+  "name": "meeting_minutes",
+  "description": "Протокол совещания: повестка, решения, задачи (профиль report)",
+  "profile": "report",
+  "author": "docx-cli"
+}
