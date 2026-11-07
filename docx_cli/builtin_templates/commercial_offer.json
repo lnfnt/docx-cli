@@ -1,0 +1,6 @@
+{
+  "name": "commercial_offer",
+  "description": "Коммерческое предложение: цены, сроки, смета (профиль corporate)",
+  "profile": "corporate",
+  "author": "docx-cli"
+}

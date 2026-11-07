@@ -1,0 +1,6 @@
+{
+  "name": "analytic_report",
+  "description": "Аналитический отчет: резюме, таблица KPI, выводы (профиль report)",
+  "profile": "report",
+  "author": "docx-cli"
+}

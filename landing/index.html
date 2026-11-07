@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>docx-cli — Headless Microsoft Word for AI Agents</title>
+<meta name="description" content="Headless Microsoft Word для автономных AI-агентов и LLM. 100% ECMA-376 / ISO/IEC 29500, zero office runtime, чистый детерминированный OpenXML. Apache-2.0.">
+<style>
+:root{
+  --bg:#0b0e13; --panel:#11161e; --panel2:#0e1219; --border:#212a37;
+  --text:#d6dee9; --dim:#8a97a8; --mono:#ffb380; --accent:#e07b3a;
+  --ok:#3fb96b; --warn:#d9a53a; --bad:#d96060;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font:15px/1.65 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background-image:linear-gradient(rgba(255,179,128,.025) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,179,128,.025) 1px,transparent 1px);
+  background-size:32px 32px;
+}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+a{color:var(--mono);text-decoration:none}
+a:hover{text-decoration:underline}
+.mono,code,pre{font-family:"SF Mono",Consolas,Menlo,"Liberation Mono",monospace}
+code{background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:13px;color:var(--mono)}
+header{padding:64px 0 40px;border-bottom:1px solid var(--border)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
+.badge{display:inline-block;padding:3px 10px;border:1px solid var(--border);border-radius:999px;
+  font-family:"SF Mono",Consolas,monospace;font-size:12px;color:var(--dim);background:var(--panel)}
+.badge.acc{color:var(--accent);border-color:#4d2f1a}
+.badge.ok{color:var(--ok);border-color:#1f4630}
+h1{font-size:34px;letter-spacing:-.5px;margin-bottom:8px}
+h1 .tag{color:var(--mono);font-size:15px;font-family:"SF Mono",Consolas,monospace;font-weight:400;margin-left:10px}
+.lede{color:var(--dim);max-width:720px;font-size:16px}
+section{padding:44px 0;border-bottom:1px solid var(--border)}
+section:last-child{border-bottom:none}
+h2{font-size:20px;margin-bottom:6px;letter-spacing:-.2px}
+h2::before{content:"§ ";color:var(--accent)}
+.sub{color:var(--dim);margin-bottom:20px;max-width:720px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+th,td{text-align:left;padding:9px 12px;border:1px solid var(--border);vertical-align:top}
+th{background:var(--panel);color:var(--dim);font-weight:600;font-family:"SF Mono",Consolas,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+tr:nth-child(even) td{background:rgba(255,255,255,.015)}
+pre{background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:18px;
+  overflow-x:auto;font-size:13px;line-height:1.7;margin:14px 0;color:#c8d3e0}
+pre .c{color:#5c6b7c}
+pre .k{color:var(--mono)}
+pre .s{color:#7ec8ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px;margin:16px 0}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px 18px}
+.card h3{font-size:14px;margin-bottom:6px;color:var(--text)}
+.card h3::before{content:"▸ ";color:var(--accent)}
+.card p{font-size:13px;color:var(--dim)}
+footer{padding:36px 0 56px;color:var(--dim);font-size:13px}
+.domain-num{color:var(--accent);font-family:"SF Mono",Consolas,monospace;font-weight:600;white-space:nowrap}
+@media (max-width:640px){h1{font-size:26px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+  <h1>docx-cli<span class="tag">// headless word for ai agents</span></h1>
+  <div class="badges">
+    <span class="badge acc">Apache-2.0</span>
+    <span class="badge">v0.1.3</span>
+    <span class="badge ok">526 tests passed</span>
+    <span class="badge">ECMA-376 100%</span>
+    <span class="badge">ISO/IEC 29500</span>
+    <span class="badge">zero office runtime</span>
+    <span class="badge">pure python</span>
+  </div>
+  <p class="lede"><strong>Headless Microsoft Word промышленного уровня для автономных AI-агентов и LLM.</strong>
+  Инструмент не эмулирует Word — он компилирует настоящий OpenXML (ECMA-376 / ISO/IEC 29500) на уровне
+  байтовой архитектуры OPC ZIP-пакета. Без LibreOffice, без MS Office, без системных GUI-зависимостей.
+  Детерминировано: один вход — один байтовый результат.</p>
+</div>
+</header>
+
+<section><div class="wrap">
+  <h2>Почему не markdown-конвертер</h2>
+  <p class="sub">Большинство инструментов сборки .docx в мире агентов — это примитивные конвертеры
+  Markdown в плоский текст, обёртки над LibreOffice или скрипты, ломающие форматирование при подстановке
+  плейсхолдеров. docx-cli собирает настоящие структуры Word:</p>
+  <div class="grid">
+    <div class="card"><h3>Никаких суррогатов</h3><p>Сноски — в <code>word/footnotes.xml</code>, комментарии — в <code>word/comments.xml</code>, списки — в <code>word/numbering.xml</code>. Там, где их ждёт Word.</p></div>
+    <div class="card"><h3>Умный рецензент</h3><p>Агент проводит аудит документа и возвращает файл с видимой историей правок — Track Changes и комментарии на полях с автором и датой.</p></div>
+    <div class="card"><h3>Живая шаблонизация</h3><p>Подстановка <code>{{var}}</code> устойчива к дроблению строк на элементы <code>&lt;w:r&gt;</code> офисным редактором. Табличные циклы, условные блоки, вложенные ключи.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>14 доменов OpenXML — полное покрытие</h2>
+  <table>
+    <tr><th>№</th><th>Домен Word (ECMA-376)</th><th>Что даёт агентам</th></tr>
+    <tr><td class="domain-num">1</td><td><strong>Геометрия и разделы</strong> — ориентация, поля, колонтитулы, газетная многоколоночная вёрстка</td><td>Альбомные таблицы в середине текста, колонки.</td></tr>
+    <tr><td class="domain-num">2</td><td><strong>Типографика (Runs)</strong> — bold, italic, strikethrough, super/subscript, highlight, моноширинный</td><td>Технические, финансовые и научные отчёты без потери начертаний.</td></tr>
+    <tr><td class="domain-num">3</td><td><strong>Абзацы</strong> — выравнивание, интервалы, красная строка, keepWithNext, защита от висячих строк</td><td>Вёрстка по ГОСТ и корпоративным стандартам.</td></tr>
+    <tr><td class="domain-num">4</td><td><strong>Списки и нумерация</strong> — многоуровневая иерархия в <code>numbering.xml</code> с автосбросом уровней</td><td>Настоящие списки Word вместо текста с пробелами.</td></tr>
+    <tr><td class="domain-num">5</td><td><strong>Таблицы</strong> — colspan/rowspan, точные ширины, заливка, границы, повтор шапки</td><td>Сметы, акты, спецификации произвольной сложности.</td></tr>
+    <tr><td class="domain-num">6</td><td><strong>Графика (DrawingML)</strong> — PNG/JPEG/GIF, масштабирование под геометрию листа, подписи</td><td>Диаграммы, печати, иллюстрации без вылета за поля страницы.</td></tr>
+    <tr><td class="domain-num">7</td><td><strong>Динамические поля</strong> — PAGE, NUMPAGES, автообновление в <code>settings.xml</code></td><td>Актуальные номера страниц при открытии в Word.</td></tr>
+    <tr><td class="domain-num">8</td><td><strong>Ссылочный аппарат</strong> — сноски, концевые сноски, авто-TOC, закладки, перекрёстные ссылки</td><td>Академические статьи, аналитические записки, договоры.</td></tr>
+    <tr><td class="domain-num">9</td><td><strong>Интерактивные формы (SDT)</strong> — чекбоксы, выпадающие списки, селекторы даты, текстовые поля</td><td>Анкеты, чек-листы согласования, бланки.</td></tr>
+    <tr><td class="domain-num">10</td><td><strong>Слой рецензирования</strong> — Track Changes (<code>w:ins</code>, <code>w:del</code>) с автором и датой, комментарии</td><td>Агент возвращает файл с видимой историей правок.</td></tr>
+    <tr><td class="domain-num">11</td><td><strong>Безопасность</strong> — аудит скрытых prompt-инъекций, защита от редактирования (<code>readOnly/comments/forms</code>)</td><td>Защита от враждебных промптов и правок готового документа.</td></tr>
+    <tr><td class="domain-num">12</td><td><strong>Математика (OMML)</strong> — векторный компилятор формул: дроби, корни, степени, суммы, интегралы</td><td>Формулы рендерятся как уравнения Word (Cambria Math), не картинками.</td></tr>
+    <tr><td class="domain-num">13</td><td><strong>Вложения</strong> — файлы внутри zip-пакета (<code>word/attachments/</code>) с метаданными и SHA-256</td><td>Самодостаточные документы-контейнеры с исходными данными.</td></tr>
+    <tr><td class="domain-num">14</td><td><strong>Шаблонизатор</strong> — Run-Reconciliation, вложенные ключи, табличные циклы, условные блоки</td><td>Типовые бланки и договоры из JSON произвольной формы.</td></tr>
+  </table>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Быстрый старт</h2>
+  <pre><span class="c"># установка</span>
+pip install git+https://github.com/lnfnt/docx-cli.git
+
+<span class="c"># компиляция из markdown: типографика, LaTeX-формулы, сноски,</span>
+<span class="c"># смена ориентации разделов, интерактивные чекбоксы</span>
+<span class="k">docx-cli md-build</span> document.md -o output.docx --profile corporate</pre>
+  <pre><span class="c"># document.md</span>
+<span class="k"># Отчет об аудите проекта {#sec-intro}</span>
+
+Показатели выросли на <span class="s">==25%==</span> по сравнению с прошлым годом[^1].
+Старая смета <span class="s">~~1 200 000 руб.~~</span> заменена на актуальную.
+
+Формула: $E_k = \frac{m v^2}{2}$.
+
+<span class="c">&lt;!-- section:landscape:next_page --&gt;</span>
+
+| Услуга | Кол-во | Ставка | Итого |
+| Проектирование | 1 | 250 000 | 250 000 руб. |
+
+- [x] Инженерный аудит пройден
+- [ ] Оплата финального этапа
+{{dropdown: ["Согласовано", "На доработке", "Отклонено"]}}
+
+[^1]: Постраничная сноска о выборке данных.</pre>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Гарантии</h2>
+  <div class="grid">
+    <div class="card"><h3>Детерминизм</h3><p>Одинаковый вход даёт одинаковый байтовый выход — генерация воспроизводима в контурах с контролем целостности.</p></div>
+    <div class="card"><h3>499 тестов</h3><p>Полный набор проверок доменов; пакет собирается из явного списка исходников.</p></div>
+    <div class="card"><h3>Чистый Python</h3><p>Ноль нативных зависимостей офисных рантаймов — работает в headless-контурах, CI и изолированных агентах.</p></div>
+    <div class="card"><h3>Ревью-контур</h3><p>Агент читает чужой .docx, возвращает правки как Track Changes — человек видит, что именно предлагал агент.</p></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>Apache-2.0 · Автор и правообладатель: <a href="mailto:lnfnt@proton.me">lnfnt</a> · Исходники: <a href="https://github.com/lnfnt/docx-cli">github.com/lnfnt/docx-cli</a></p>
+</div></footer>
+</body>
+</html>

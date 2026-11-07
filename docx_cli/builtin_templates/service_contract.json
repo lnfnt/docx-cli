@@ -1,0 +1,6 @@
+{
+  "name": "service_contract",
+  "description": "Договор оказания услуг: предмет, права и обязанности, реквизиты сторон (профиль corporate)",
+  "profile": "corporate",
+  "author": "docx-cli"
+}
